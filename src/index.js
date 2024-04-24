@@ -1,14 +1,44 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
+import AddItems from "./pages/AddItems";
+import ListItems from "./pages/ListItems";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import Items from "./pages/Items";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/items",
+    element: <Items />,
+  },
+  {
+    path: "/add",
+    element: (
+      <div>
+        <AddItems />
+      </div>
+    ),
+  },
+  {
+    path: "/list",
+    element: <ListItems />,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 
