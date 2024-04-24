@@ -26,3 +26,6 @@ Used Lighthouse in Chrome to audit app for compliance with PWA standards, perfor
 
 ![image](https://github.com/Meiramkhanova/react-pwa-app/assets/102648181/293059f5-51e1-4d16-8450-ce2c4d9d8f75)
 
+![image](https://github.com/Meiramkhanova/react-pwa-app/assets/102648181/459b355e-e929-4418-be52-a4570cc45615)
+
+
