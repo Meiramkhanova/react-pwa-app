@@ -19,3 +19,10 @@ After installation, in project will be some files to take attention:
 
 Running Your Progressive Web Application
 Changing the service worker from unregistered to registered will allow you to utilize the app even when it's offline, a key benefit when it comes to PWAs.
+
+Using the Lighthouse:
+
+Used Lighthouse in Chrome to audit app for compliance with PWA standards, performance, accessibility, and best web development practices.
+
+![image](https://github.com/Meiramkhanova/react-pwa-app/assets/102648181/293059f5-51e1-4d16-8450-ce2c4d9d8f75)
+
